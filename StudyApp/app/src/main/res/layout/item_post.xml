@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="347dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-90dp"
+        android:src="@drawable/delete"
+        />
+
+    <!-- 게시물 이미지 -->
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="게시물 이미지" />
+
+
+    <ToggleButton
+        android:id="@+id/heart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="347dp"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/ic_toggle"
+        android:gravity="center"
+        android:textOff=""
+        android:textOn=""
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/writer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="000 님"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/postTime"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-22dp"
+        android:layout_marginLeft="200dp"
+        android:text="9월 17일 4:17PM"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <!-- 게시물 제목 -->
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="수학 4단원 다품"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

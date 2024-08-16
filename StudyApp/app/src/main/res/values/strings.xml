@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">StudyApp</string>
+    <string name="FirstMessage">인식할 문자를 찍어주세요.</string>
+    <string name="LoadingMessage">잠시만 기다려주세요.결과가 여기에 나타납니다.</string>
+    <string name="CompleteMessage">문자인식이 완료되었습니다.</string>
+
+    <array name="repeat_array">
+
+        <item>매주</item>
+        <item>매월</item>
+        <!-- 다른 반복 주기 옵션들 추가 -->
+    </array>
+
+    <array name="mission_array">
+        <item>타일 맞추기</item>
+        <item>숫자 계산</item>
+        <item>명언 쓰기</item>
+        <!-- 다른 반복 주기 옵션들 추가 -->
+    </array>
+
+    <array name="tasks_array">
+        <item>할 일 1</item>
+        <item>할 일 2</item>
+        <item>할 일 3</item>
+        <!-- 다른 할 일 항목들 추가 -->
+    </array>
+
+    <string name="title_activity_wise_saying">WiseSaying</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="photo_description">Photo Description</string>
+</resources>

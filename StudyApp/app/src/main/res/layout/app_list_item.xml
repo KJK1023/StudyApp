@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- 앱 아이콘 이미지 -->
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <!-- 앱 이름 텍스트 -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="app1"
+        android:padding="10dp"/>
+
+    <!-- 버튼 -->
+    <ImageView
+        android:id="@+id/appSelect"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lock"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+</LinearLayout>
