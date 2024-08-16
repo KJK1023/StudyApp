@@ -1,0 +1,16 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.10'
+        // 여기에 다른 필요한 의존성이 있을 수 있습니다.
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+    id 'com.google.gms.google-services' version '4.4.1' apply false
+}

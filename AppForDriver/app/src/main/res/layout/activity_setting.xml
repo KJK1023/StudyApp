@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 설정 제목 -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설정"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- 음성 경고 -->
+    <TextView
+        android:id="@+id/textViewVoiceWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성 경고"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- 음성 경고 On/Off Switch -->
+    <Switch
+        android:id="@+id/switchVoiceWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVoiceWarning"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- HUD 경고 -->
+    <TextView
+        android:id="@+id/textViewHUDWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUD 경고"
+        android:textSize="18sp"
+        android:layout_below="@id/switchVoiceWarning"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- HUD 경고 On/Off Switch -->
+    <Switch
+        android:id="@+id/switchHUDWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHUDWarning"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- 개인정보 수정 버튼 -->
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보 수정"
+        android:background="@drawable/ripple_drawable"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/switchHUDWarning"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>

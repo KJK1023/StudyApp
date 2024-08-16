@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 개인정보 수정 제목 -->
+    <TextView
+        android:id="@+id/textViewPersonalInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개인정보 수정"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- 현재 아이디 -->
+    <TextView
+        android:id="@+id/textViewCurrentIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 아이디"
+        android:layout_below="@id/textViewPersonalInfoTitle"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CurrentUserID"
+        android:layout_toEndOf="@id/textViewCurrentIdLabel"
+        android:layout_alignBaseline="@id/textViewCurrentIdLabel"
+        android:layout_marginStart="8dp"/>
+
+    <!-- 기존 비밀번호 입력 -->
+    <TextView
+        android:id="@+id/textViewCurrentPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기존 비밀번호"
+        android:layout_below="@id/textViewCurrentId"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCurrentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="기존 비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:layout_below="@id/textViewCurrentPasswordLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- 변경할 비밀번호 입력 -->
+    <TextView
+        android:id="@+id/textViewNewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="변경할 비밀번호"
+        android:layout_below="@id/editTextCurrentPassword"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="변경할 비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:layout_below="@id/textViewNewPasswordLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- 비밀번호 변경하기 버튼 -->
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 변경하기"
+        android:background="@drawable/ripple_drawable"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"/>
+
+    <!-- 비상연락망 재설정 -->
+    <TextView
+        android:id="@+id/textViewEmergencyContactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비상연락망 재설정"
+        android:textSize="18sp"
+        android:layout_below="@id/buttonChangePassword"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- 새로운 비상 연락처 입력 -->
+    <EditText
+        android:id="@+id/editTextNewEmergencyContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="새로운 비상 연락처를 입력하세요"
+        android:inputType="phone"
+        android:layout_below="@id/textViewEmergencyContactTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- 연락처 저장 버튼 -->
+    <Button
+        android:id="@+id/buttonSaveEmergencyContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연락처 저장"
+        android:background="@drawable/ripple_drawable"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/editTextNewEmergencyContact"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>
